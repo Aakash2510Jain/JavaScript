@@ -1,0 +1,20 @@
+   /* var recordMap = component.get("v.mapValues");
+        var arrayMapKeys = [];
+        for (let value of recordMap.values(selectedObjName)) {
+            arrayMapKeys = value;
+        }
+       
+        component.set("v.mapOfFieldValues", arrayMapKeys);
+           /*
+        for (let value of recordMap.values(selectedObjName)) {
+            if(recordMap.values(selectedObjName).keys == selectedObjName){
+                arrayMapKeys = value;
+            }
+                
+        }*/
+       /* for (let value of recordMap.values(selectedObjName)) {
+            if(recordMap.keys(key)== selectedObjName){
+                arrayMapKeys = value;
+            }
+        }*/
+       
