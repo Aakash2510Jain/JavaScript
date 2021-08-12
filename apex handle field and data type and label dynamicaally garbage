@@ -1,0 +1,70 @@
+    
+    /*
+     * 
+     *     /*  for(sObjects__c objName : sObjectList){
+            system.debug('data::'+objName.API_Name__c);
+            
+            SObjectType sObjType = ((SObject) Type.forName(objName.API_Name__c).newInstance()).getSObjectType();
+            Map <String, Schema.SObjectField> fieldMap = sObjType.getDescribe().fields.getMap();
+            
+            for(string fieldName : fieldMap.keySet()){
+                String fieldLabel = fieldMap.get(fieldName).getDescribe().getLabel();
+                Schema.DisplayType fielddataType = fieldMap.get(fieldName).getDescribe().getType();
+                if(fielddataType == Schema.DisplayType.Picklist){
+                    
+                }               
+            }
+        }*/
+    /*
+                    if(picklistValuesByFieldName.containsKey(fieldName)){
+                        List<String> picklistValues = picklistValuesByFieldName.containsKey(fieldName);
+                        picklistValues.add(fieldName);
+                        pickListFieldByObjectName.put(objName.API_Name__c, fieldListtoBeadded);
+                    }
+                    else{
+                        pickListFieldByObjectName.put(objName.API_Name__c, new List<String>{fieldName});
+                    }
+                    List<String> picklistValues = new List<String>();
+                    SObjectType objectType = Schema.getGlobalDescribe().get(objectName);
+                    
+                    List<Schema.PicklistEntry> pick_list_values = objectType.getDescribe()
+                        .fields.getMap()
+                        .get(pickListFieldName)
+                        .getDescribe().getPickListValues();
+                    for (Schema.PicklistEntry aPickListValue : pick_list_values) {                   
+                        picklistValues.add(aPickListValue.getValue()); 
+                    }
+     * 
+     * 
+     * 
+     * 
+     * 
+     * List<String> picklistValues = new List<String>();
+        SObjectType objectType = Schema.getGlobalDescribe().get(objectName);
+
+     *  List<Schema.PicklistEntry> pick_list_values = objectType.getDescribe()
+                    .fields.getMap()
+                    .get(pickListFieldName)
+                    .getDescribe().getPickListValues();
+                for (Schema.PicklistEntry aPickListValue : pick_list_values) {                   
+                    picklistValues.add(aPickListValue.getValue()); 
+                }
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * List<String> picklistValues = new List<String>();
+        SObjectType objectType = Schema.getGlobalDescribe().get(objectName);
+
+     * List<Schema.PicklistEntry> pick_list_values = objectType.getDescribe()
+                                                       .fields.getMap()
+                                                       .get(pickListFieldName)
+                                                       .getDescribe().getPickListValues();
+        for (Schema.PicklistEntry aPickListValue : pick_list_values) {                   
+            picklistValues.add(aPickListValue.getValue()); 
+        }
+     * 
+*/
+    
